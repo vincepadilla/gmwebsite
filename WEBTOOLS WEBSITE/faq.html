@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions</title>
+  <link rel="stylesheet" href="faqstyle.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+
+  </head>
+  <body>
+    <div class="gmstudio">
+        <img src="GMLOGO.png">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faqs">
+        <button class="question">
+          What types of photography do you offer?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We provide a range of photography services tailored to different needs. Our offerings include portrait photography for individuals and families, event photography for weddings and celebrations, and product photography for businesses looking to showcase their products. Each service is designed to capture the essence of the moment while delivering high-quality images.
+          </p>
+        </div>
+      </div>
+
+      <div class="faqs">
+        <button class="question">
+          How can I order prints?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            You can easily place an order for prints through our user-friendly website. Simply upload your images, select your desired print sizes, and choose any additional options, such as framing or special finishes. If you prefer, you can also visit our physical location to speak with our staff, who can assist you with your order in person.
+          </p>
+        </div>
+      </div>
+
+      <div class="faqs">
+        <button class="question">
+          What sizes of prints are available?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We offer a wide variety of print sizes to meet your needs. Common sizes include 4x6, 5x7, 8x10, and larger options like 11x14, 16x20, and custom sizes to fit your projects. Additionally, we provide options for canvas prints and posters, allowing you to choose the perfect format for displaying your photos.
+          </p>
+        </div>
+      </div>
+
+      <div class="faqs">
+        <button class="question">
+          How long will it take to receive my prints?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            The typical turnaround time for prints is 3-5 business days from the time your order is placed. However, this may vary depending on the complexity of your order and our current workload. For those who need their prints sooner, we offer rush service for an additional fee. You’ll receive a notification once your prints are ready for pickup or shipment.
+          </p>
+        </div>
+      </div>
+
+      <div class="faqs">
+        <button class="question">
+          Can I get digital copies of my photos?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes, we provide digital downloads for all photography sessions. After your session, you’ll receive a link to download high-resolution images suitable for printing, as well as web-optimized versions for sharing on social media. This ensures you have access to your photos in a format that meets your needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faqs">
+        <button class="question">
+          What payment options do you accept?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We accept a variety of payment methods to make your experience as convenient as possible. You can pay using major credit and debit cards, as well as PayPal for online orders. If you visit our store, we also accept cash. All transactions are processed securely to ensure your information is safe.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("question");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
